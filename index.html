@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial scale-1">
+    
 </head>
 <body>
    <header class="container-fluid">
@@ -20,22 +20,28 @@
                           <h2 class="title">Full Stack Developer</h2>
                       </div>
                     </div> 
-                 <div class="row">
-                      <ul id="nav" class="list-inline clearfix">
-                          <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
-                              <a href="index.html" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                          </li>
-                          <li class="col-xs-6 col-sm-3 ui-menu-color-resume menuitem">
-                              <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
-                          </li>
-                          <li class="col-xs-6 col-sm-3 ui-menu-color-contact menuitem">
-                              <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
-                          </li>
-                          <li class="col-xs-6 col-sm-3 ui-menu-color-download menuitem">
-                              <a href="assets/cv/cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
-                          </li>
-                       </ul>
-                  </div>
+                  <div class="row">
+                    <ul id="nav" class="list-inline clearfix">
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
+                            <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
+                            <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
+                            <a href="contact.html" class="hvr-sweep-to-bottom"><i class=" fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
+                            <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
+                            <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
+                            <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
+                        </li>
+                    </ul>
+                </div>
              </div>
         </div>
     </header>
@@ -49,13 +55,13 @@
                </div>
                 <div class="personal-info-item">
                    <div class="key">
-                         <p class="uppercase">Name:</p>
+                        <p class="uppercase">Name:</p>
                   </div>
                 <div class="value">
                     <p>Muhammad Waseem Khan</p>
-               </div>
-            </div>
-             <div class="personal-info-item">
+                </div>
+                </div>
+                <div class="personal-info-item">
                    <div class="key">
                          <p class="uppercase">Address:</p>
                   </div>
@@ -68,7 +74,7 @@
                          <p class="uppercase">Phone:</p>
                    </div>
                 <div class="value">
-                    <p>086 202 7419</p>
+                    <p>00353 86 202 7419</p>
                 </div>
             </div>
              <div class="personal-info-item">
@@ -168,5 +174,24 @@
        </div>
        
    </footer>
+   <script>
+       function initMap() {
+           var map = new google.maps.Map(document.getElementById("map"), {
+               zoom: 3,
+               center: {
+                   lat:  46.619261,
+                   lng: -33.134766
+               }
+           });
+       }
+   </script>
+   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKAVhlI6Qpov8YXeSkCWoRtKBjkJI1l_Q&callback=initMap"></script>
+
 </body>
 </html>
+
+
+
+
+
